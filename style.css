@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f9fafb;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: lightcyan;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 999;
+    padding: 0.8rem 2rem;
+}
+
+/* Home and About Titles */
+.home-title, .about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10vh 5vw; /* Responsive padding */
+}
+
+.home-title h1, .about-title h1 {
+    font-size: clamp(2rem, 5vw, 4rem); /* Responsive font size */
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-title h1 {
+    font-size: 3rem;
+}
+
+.home-title p {
+    margin: 1.5rem;
+}
+
+.home-title .btn {
+    width: 80%; /* Use percentage for width */
+    max-width: 250px;
+    padding: 15px;
+    margin: 20px;
+}
+
+.sidebar {
+    background: transparent;
+    padding: 0.5rem;
+}
+
+.sidebar img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+}
+
+.sidebar img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* About Section Line Centering */
+.line {
+    background: red;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0.5rem auto; /* Centering with auto margin */
+}
+
+/* Responsive Fixes for Small Screens */
+@media (max-width: 768px) {
+    .home-title, .about-title {
+        padding: 5vh 3vw;
+    }
+
+    .sidebar {
+        gap: 0.5rem;
+        padding: 0.3rem;
+    }
+
+    .sidebar .icon img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title h1, .about-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-title .btn {
+        width: 90%;
+        padding: 12px;
+    }
+}
+
+
+/* -------------------- */
+/* -------------------- */
+/* General Styles */
+
+  
+  /* Skills Section */
+  
+  .sidebar .icon {
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+.sidebar .icon:hover {
+    transform: scale(1.1);
+}
+
+
+
+  .skills-section {
+    padding: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+
+.skill {
+    background-color: #e0f2fe;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+  /* Testimonials */
+
+.container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    box-sizing: border-box;
+    padding: 5rem;
+
+
+}
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
+
+.card-body {
+    text-align: left;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+  }
+  
+
+
+.card-para{
+    font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* pflife */
+
+.pg-body{
+    padding: 3rem;
+}
+
+.pg-body{
+    padding: 5.5rem;
+}
+
+
+
+.pg-body h5 {
+    /* margin-right: 2rem; */
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+
+.card-img img {
+    width: 80vw; /* Use max-width for better responsiveness */
+    max-width: 100%; 
+    height: 50vh; /* Avoid fixed height unless necessary */
+    object-fit: cover; /* Ensure the image maintains aspect ratio without distortion */
+    padding-left: 5rem; /* Adjust padding based on layout requirements */
+}
+
+
+/* form */
+
+.container-form-validation form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* contact-title */
+
+.contact-title{
+    text-align: center;
+}
+
+
+
+
+/* footer */
+
+/* Skill icons in footer */
+.skill-footer img {
+    width: 50px;
+    height: 40px;
+    margin: 0.5rem;
+    background: rgb(242, 243, 243);
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits well inside the container */
+}
+
+/* Footer container */
+.container-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f3f4f6;
+}
+
+.container-footer span {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.container-footer p {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
+
+/* Footer navigation */
+.footer-nav {
+    background: lightgrey;
+    padding: 1.5rem;
+    width: 100%; /* Makes the nav take full width */
+    max-width: 600px; /* Prevents nav from being too wide */
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem; /* Adds spacing between links */
+    flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #007bff;
+}
